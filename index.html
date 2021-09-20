@@ -33,6 +33,7 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Files -->
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
@@ -253,28 +254,39 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center">Querés recibir descuentos y novedades?</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://gmail.us5.list-manage.com/subscribe/post?u=b363e1beabf162685c8756018&amp;id=4865c36585" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
               <div class="row">
-                <div class="col-md-6">
-                  <label>Name</label>
+                <div class="col-md-3">
+                  <label for="mce-FNAME">Name</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text">
                         <i class="nc-icon nc-single-02"></i>
                       </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" placeholder="Nombre" value="" name="FNAME" id="mce-FNAME" required="Requerido">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="mce-LNAME">Apellido</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="nc-icon nc-single-02"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Apellido" value="" name="LNAME" id="mce-LNAME" required="Requerido">
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <label>Email</label>
+                  <label for="mce-EMAIL">Email</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text">
                         <i class="nc-icon nc-email-85"></i>
                       </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input class="form-control" placeholder="Email" type="email" value="" name="EMAIL" id="mce-EMAIL" required="Requerido">
                   </div>
                 </div>
               </div>
@@ -283,7 +295,7 @@ The above copyright notice and this permission notice shall be included in all c
               <br/>
               <div class="row">
                 <div class="col-md-4 ml-auto mr-auto">
-                  <button class="btn btn-danger btn-lg btn-fill" data-toggle="tooltip" data-placement="bottom" title data-original-title="No te vas a arrepentir!">Suscribirme!</button>
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg btn-fill" data-toggle="tooltip" data-placement="bottom" title data-original-title="No te vas a arrepentir!" onclick="showDiv();">Suscribirme!</button>
                 </div>
               </div>
             </form>
@@ -292,6 +304,16 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </div>
+      <!-- Notifications -->
+      <div id="alertSuccess" style="display:none;" class="alert alert-success">
+        <div class="container">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="nc-icon nc-simple-remove"></i>
+        </button>
+        <span>Te suscribiste correctamente! </span>
+        </div>
+      </div>
+      <!-- End Notifications -->
   <footer class="footer   footer-white ">
     <div class="container">
       <div class="row">
@@ -333,7 +355,9 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+  <!--  Mailchimp Plugin    -->
+  <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 
 </html>

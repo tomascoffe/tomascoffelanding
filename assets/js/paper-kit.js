@@ -316,3 +316,8 @@ function debounce(func, wait, immediate) {
     if (immediate && !timeout) func.apply(context, args);
   };
 };
+
+function showDiv () {
+  setTimeout( function() {document.getElementById('alertSuccess').style.display = "block";}
+  , 1000)
+};
