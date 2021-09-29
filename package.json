@@ -5,8 +5,8 @@
   "homepage": "http://tomascoffee.com.ar",
   "author": "JPR",
   "scripts": {
-    "dev": "parcel index.hmtl",
-    "build": "parcel build index.hmtl"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
