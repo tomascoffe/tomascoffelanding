@@ -6,7 +6,7 @@
   "author": "JPR",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-minify"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
