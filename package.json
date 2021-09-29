@@ -1,12 +1,12 @@
 {
-  "name": "paper-kit",
-  "description": "Bootstrap 4 Now UI Design",
+  "name": "Tomas Coffee",
+  "description": "Cafe importado",
   "version": "2.2.0",
-  "homepage": "http://creative-tim.com/product/paper-kit",
-  "author": "Creative Tim",
-  "license": "Creative Tim License <www.creative-tim.com/license>",
+  "homepage": "http://tomascoffee.com.ar",
+  "author": "JPR",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "parcel index.hmtl",
+    "build": "parcel build index.hmtl"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
